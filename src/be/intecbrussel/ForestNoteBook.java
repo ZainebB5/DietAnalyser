@@ -129,7 +129,7 @@ public class ForestNoteBook {
 
     public void sortPlantsByColour(){
         plants.stream().sorted(Comparator.comparing(Plant::getColour));
-        System.out.println(plants);
+        System.out.println();
 
     }
 

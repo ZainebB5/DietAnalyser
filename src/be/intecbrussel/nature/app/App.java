@@ -17,15 +17,20 @@ public class App {
         ForestNoteBook noteBook = new ForestNoteBook();
         Tree eik = new Tree("Eik");
         eik.setLeafType(LeafType.HAND);
+        eik.setColour(Plant.Colour.BLUE);
         Flower flower = new Flower("Floflo");
         flower.setSmell(Flower.Scent.ERTHY);
+        flower.setColour(Plant.Colour.RED);
         Bush bush = new Bush("Aardbeien boom");
         bush.setLeafType(LeafType.NEEDLE);
         bush.setFruit("Aardbei");
+        bush.setColour(Plant.Colour.GREEN);
         Flower jasmin = new Flower("Jasmin");
         jasmin.setSmell(Flower.Scent.MUSKY);
+        flower.setColour(Plant.Colour.YELLOW);
         Tree pijBoom = new Tree("Pijnboom");
         pijBoom.setLeafType(LeafType.HEART);
+        pijBoom.setColour(Plant.Colour.BROWN);
 
         noteBook.addPlant(eik);
         noteBook.addPlant(flower);

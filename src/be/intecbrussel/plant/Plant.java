@@ -21,6 +21,9 @@ public class Plant implements Comparable<Plant>{
         this.name = name;
         this.height = height;
     }
+    public Plant(Colour colour){
+        this.colour = colour;
+    }
 
     public String getName() {
         return name;
