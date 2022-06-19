@@ -89,11 +89,15 @@ public class App {
 
         noteBook.printNotebook();
 
-        Collections.reverse(noteBook.getAnimals());
-        System.out.println("* Animals from loudest to least *\n" + noteBook.getAnimals());
+        /*System.out.println("--".repeat(29));
+        Collections.sort(noteBook.getAnimals());
+        Collections.reverse(noteBook.getAnimals());*/
+        System.out.println("* Animals from loudest to least * ");
+        noteBook.getAnimals().stream()
+                .sorted(Comparator.comparing(Animal::getDecibel).reversed())
+                .forEach(System.out::println);
         System.out.println("* Animals above 50 decibels *");
         noteBook.getAnimals().stream()
-                //.sorted(Comparator.comparing(Animal::getDecibel).reversed())
                 .filter(a -> a.getDecibel() > 50 )
                 .forEach(System.out::println);
 
